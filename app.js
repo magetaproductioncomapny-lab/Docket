@@ -372,7 +372,8 @@
     $('amount').value = '';
     $('amount').setCustomValidity('');
     $('amount').focus();
-    $('formStatus').textContent = 'Transaction added.';
+    $('formStatus').textContent = `Added ${category} ${type} for ${currency.format(amount)}.`;
+    $('formStatus').hidden = false;
     render();
     notify('Transaction added.');
   });

@@ -89,3 +89,8 @@
   .tx-icon { width: 27px; height: 27px; }
   .tx-amount { max-width: 88px; font-size: 9px; }
 }
+
+/* Prevent iOS Safari from zooming the page when entering transaction amounts. */
+@media (max-width: 560px) {
+  input[type="number"] { font-size: 16px !important; }
+}
